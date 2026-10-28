@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flashcards | Mitos ou Verdades?</title>
+<style>
+:root{--navy:#263445;--purple:#9b3bc4;--blue:#3478d4;--bg:#f4f7fb}
+*{box-sizing:border-box}body{margin:0;font:16px/1.5 Arial,sans-serif;color:var(--navy);background:var(--bg)}
+header{padding:42px 18px;text-align:center;color:white;background:linear-gradient(130deg,#252c49,#663579,#3478d4)}
+header h1{font-size:clamp(2rem,7vw,3rem);margin:12px 0 4px}header p{margin:auto;max-width:620px}
+main{width:min(1000px,92%);margin:28px auto 55px}.intro,.note{background:white;border:1px solid #d7e2ee;border-radius:16px;padding:20px}
+.intro h2{margin:0 0 6px}.intro p{margin:0;color:#607080}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:24px 0 16px}
+.toolbar h2{margin:0}.counter{background:#dcf6eb;color:#235a49;padding:7px 12px;border-radius:30px;font-weight:bold}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:18px}
+.card{min-height:250px;perspective:1000px;outline:none}.inner{position:relative;min-height:250px;transform-style:preserve-3d;transition:transform .65s}
+.card.flipped .inner{transform:rotateY(180deg)}.face{position:absolute;inset:0;min-height:250px;padding:22px;border-radius:17px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;backface-visibility:hidden;box-shadow:0 8px 22px #26344516;border:1px solid #d7e2ee}
+.front{background:white}.back{background:linear-gradient(145deg,#663579,#3478d4);color:white;transform:rotateY(180deg)}
+.num{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--purple);color:white;font-weight:bold;margin-bottom:10px}
+.face h3{margin:0 0 10px}.face p{margin:0}.hint{font-size:.86rem;color:#607080;margin-top:13px!important}.back .hint{color:#edf1ff}
+button{margin-top:15px;padding:9px 17px;border:0;border-radius:30px;background:var(--purple);color:white;font:bold 1rem Arial;cursor:pointer;transition:transform .2s,background .2s}
+button:hover{background:#76289b;transform:translateY(-3px)}.back button{background:white;color:#663579}button:focus-visible{outline:3px solid #f2c94c;outline-offset:3px}
+.note{text-align:center;color:#607080;margin-top:25px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
+</style></head>
+<body>
+<header><span>APRENDA • REVISE • DESCUBRA</span><h1>Mitos ou Verdades?</h1><p>Flashcards rápidos para testar seus conhecimentos sobre internet, tecnologia e informação.</p></header>
+<main>
+<section class="intro"><h2>Como estudar</h2><p>Leia a afirmação e toque em <b>Virar card</b> para conferir a resposta e a explicação. Tente responder antes de revelar!</p></section>
+<div class="toolbar"><h2>Seus flashcards</h2><span class="counter" id="counter" aria-live="polite">0 de 8 cards vistos</span></div>
+<section class="grid" aria-label="Lista de flashcards">
+<article class="card"><div class="inner"><div class="face front"><span class="num">01</span><h3>“Tudo o que está na internet é verdadeiro.”</h3><p class="hint">Mito ou verdade?</p><button>Virar card</button></div><div class="face back"><span class="num">01</span><h3>MITO</h3><p>Qualquer pessoa pode publicar conteúdo. Confira autoria, data e outras fontes confiáveis.</p><button>Voltar</button></div></div></article>
+<article class="card"><div class="inner"><div class="face front"><span class="num">02</span><h3>“Uma senha forte deve ser difícil de adivinhar.”</h3><p class="hint">Mito ou verdade?</p><button>Virar card</button></div><div class="face back"><span class="num">02</span><h3>VERDADE</h3><p>Prefira senhas longas e únicas. Não reutilize a mesma senha em vários serviços.</p><button>Voltar</button></div></div></article>
+<article class="card"><div class="inner"><div class="face front"><span class="num">03</span><h3>“Notícias antigas podem circular como se fossem atuais.”</h3><p class="hint">Mito ou verdade?</p><button>Virar card</button></div><div class="face back"><span class="num">03</span><h3>VERDADE</h3><p>Observe a data da publicação e procure a origem antes de compartilhar uma notícia.</p><button>Voltar</button></div></div></article>
+<article class="card"><div class="inner"><div class="face front"><span class="num">04</span><h3>“Se uma imagem parece real, ela não precisa ser verificada.”</h3><p class="hint">Mito ou verdade?</p><button>Virar card</button></div><div class="face back"><span class="num">04</span><h3>MITO</h3><p>Imagens podem ser editadas ou tiradas de contexto. Compare com outras fontes.</p><button>Voltar</button></div></div></article>
+<article class="card"><div class="inner"><div class="face front"><span class="num">05</span><h3>“O cadeado no navegador garante que um site é confiável.”</h3><p class="hint">Mito ou verdade?</p><button>Virar card</button></div><div class="face back"><span class="num">05</span><h3>MITO</h3><p>O cadeado indica conexão criptografada, mas não garante que o site seja honesto.</p><button>Voltar</button></div></div></article>
+<article class="card"><div class="inner"><div class="face front"><span class="num">06</span><h3>“É importante conferir quem publicou uma informação.”</h3><p class="hint">Mito ou verdade?</p><button>Virar card</button></div><div class="face back"><span class="num">06</span><h3>VERDADE</h3><p>Verifique o autor, a instituição responsável, as fontes citadas e a reputação do veículo.</p><button>Voltar</button></div></div></article>
+<article class="card"><div class="inner"><div class="face front"><span class="num">07</span><h3>“Compartilhar sem ler pode espalhar desinformação.”</h3><p class="hint">Mito ou verdade?</p><button>Virar card</button></div><div class="face back"><span class="num">07</span><h3>VERDADE</h3><p>Leia o conteúdo completo, confira os dados e pense antes de repassar uma mensagem.</p><button>Voltar</button></div></div></article>
+<article class="card"><div class="inner"><div class="face front"><span class="num">08</span><h3>“A mesma senha deve ser usada em todas as contas.”</h3><p class="hint">Mito ou verdade?</p><button>Virar card</button></div><div class="face back"><span class="num">08</span><h3>MITO</h3><p>Se uma conta for comprometida, outras também podem ficar vulneráveis. Use senhas diferentes.</p><button>Voltar</button></div></div></article>
+</section><p class="note">Dica: estude um card por vez e explique a resposta com suas próprias palavras. ✨</p>
+</main>
+<script>
+const cards=document.querySelectorAll('.card'),counter=document.querySelector('#counter'),seen=new Set();
+cards.forEach(card=>{card.querySelectorAll('button').forEach(btn=>btn.addEventListener('click',()=>{card.classList.toggle('flipped');if(card.classList.contains('flipped'))seen.add(card);counter.textContent=`${seen.size} de ${cards.length} cards vistos`;}));});
+</script></body></html>
